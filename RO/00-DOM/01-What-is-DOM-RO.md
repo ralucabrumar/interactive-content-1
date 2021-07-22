@@ -2,29 +2,27 @@
 
 [slide hideTitle]
 
-# Model de Obiect Document
+# Document Object Model
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-3-4-document-object-model-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-
-
 Fiecare pagină web este un document HTML, care constă din text simplu și etichete.
 
-A fi nevoit să lucrezi **direct** cu text pe un site web mare este o sarcină monotona.
+A fi nevoit să lucrezi **direct** cu text pe un site web mare este o sarcină dificilă.
 
-DOM usureaza lucrul cu HTML prin **transformarea textului în obiecte**, ce pot fi ușor manipulate de JavaScript.
+DOM ușurează lucrul cu HTML prin **transformarea textului în obiecte**, ce pot fi ușor manipulate de JavaScript.
 
-DOM este pur și simplu o **legatura** între documentele HTML și limbajul de programare JavaScript.
+DOM este pur și simplu o **legătură** între documentele HTML și limbajul de programare JavaScript.
 
 Prin manipulări DOM dezvoltatorul poate:
 
-- Obtine un element HTML
+- Obține un element HTML
 
 - Schimba un element
 
-- Adauga un element nou
+- Adăuga un element nou
 
-- Sterge un element
+- șterge un element
 
 Iată un exemplu de element HTML:
 
@@ -32,9 +30,9 @@ Iată un exemplu de element HTML:
 <p>Acesta este un text oarecare</p>
 ```
 
-În exemplu, elementul este înconjurat de etichete de deschidere și închidere, specificându-i tipul (în acest caz - un paragraf)
+În exemplu, elementul este înconjurat de etichete de deschidere și închidere, specificându-i tipul (în acest caz - un paragraf).
 
-Între cele două etichete se află continutul textului elementului.
+Între cele două etichete se află conținutul textului elementului.
 
 [/slide]
 
@@ -56,7 +54,7 @@ Acesta definește:
 
 - Evenimente
 
-Iata un exemplu de cum arata HTML DOM:
+Iată un exemplu referitor la cum arată HTML DOM:
 
 [image assetsSrc="Js-advanced-DOM-24.png" /]
 [/slide]
