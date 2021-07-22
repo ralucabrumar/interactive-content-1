@@ -8,25 +8,25 @@
 
 **1. DOM**
 
-- Care este ideea a DOM (Document Object Model)
+- Ce este conceptul de DOM (Document Object Model)
 
-**2. Metodele DOM**
+**2. Metode DOM**
 
 - Ce metode pot fi utilizate în timp ce lucrați cu DOM
 
-**3. Manipulările DOM**
+**3. Manipulări DOM**
 
 - Cum se schimbă structura HTML prin DOM
 
-**4. Elementele Parents și Children**
+**4. Elemente Parents și Children**
 
 - Când un element HTML este parent și când - child
 
-**5. Proprietățile DOM și HTML atribute**
+**5. Proprietăți DOM și Atribute HTML**
 
 - Cum diferă proprietățile DOM de atributele HTML
 
-**6. Introducerea evenimentelor DOM**
+**6. Introducerea Evenimentelor DOM**
 
 - Cum să "ascultați" acțiuni specifice ale utilizatorilor și să reacționați la acestea
 
