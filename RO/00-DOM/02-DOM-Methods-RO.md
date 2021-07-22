@@ -4,7 +4,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-6-7-dom-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Elementele HTML din structura de DOM au propriile lor **metode** și **proprietăți**.
+Elementele HTML din structura arborelui DOM au propriile lor **metode** și **proprietăți**.
 
 Acestea sunt un **instrument suplimentar**, care este foarte util în munca unui inginer software.
 
@@ -21,7 +21,7 @@ Proprietățile DOM sunt **informații care pot fi primite și modificate**.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/RO/JS-Advanced-DOM-8-9-example-dom-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-După ce rulați acest exemplu în browser-ul:
+După ce rulați acest exemplu în browser:
 
 ```js
 <html>
@@ -38,7 +38,7 @@ După ce rulați acest exemplu în browser-ul:
 </html>
 ```
 
-Acesta este modul de a obține titlul `h1`, folosind JavaScript:
+Acesta este un mod de a obține titlul `h1`, folosind JavaScript:
 
 ```js
 let h1Element = document.getElementsByTagName('h1')[0];
@@ -69,14 +69,14 @@ JavaScript poate fi, de asemenea, **direct** inserat în documentul HTML:
 </html>
 ```
 
-În acest exemplu, un script este inserat în documentul HTML utilizând tag-ul `<script>`.
+În acest exemplu, un script este inserat în documentul HTML cu ajutorul etichetei `<script>`.
 
-În acest fel, primul element de titlu, care este "**Introducere în DOM**", poate fi tipărit în consola browserului.
+În acest fel, primul element de tip titlu, care este "**Introducere în DOM**", poate fi tipărit în consola browser-ului.
 [/slide]
 
 [slide hideTitle]
 
-# Un alt Exemple a Metodelor DOM 
+# Un Alt Exemplu de Metode DOM 
 
 Proprietățile DOM HTML sunt valori pe care le puteți "**obține**" sau "**seta**":
 
@@ -103,8 +103,8 @@ Codul dat produce următorul rezultat:
 
 [image assetsSrc="JS-Advanced-Intro-DOM.JPG" /]
 
-Cu acest exemplu, "**- DONE**" se adaugă la sfârșitul "**DOM Properties example**" "**DOM Properties example - DONE**".
+În acest exemplu, "**- DONE**" se adaugă la sfârșitul "**DOM Properties example**", iar rezultatul este "**DOM Properties example - DONE**".
 
-Acesta este modul în care puteți schimba conținutul unei pagini web **dinamic**.
+Acesta este modul în care puteți schimba conținutul unei pagini web în mod **dinamic**.
 
 [/slide]
