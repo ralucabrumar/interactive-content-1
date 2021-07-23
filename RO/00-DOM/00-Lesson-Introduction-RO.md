@@ -18,9 +18,9 @@
 
 - Cum se schimbă structura HTML prin DOM
 
-**4. Elemente Parents și Children**
+**4. Elemente de tip Părinte și Copil**
 
-- Când un element HTML este parent și când - child
+- Când un element HTML este părinte și când - copil
 
 **5. Proprietăți DOM și Atribute HTML**
 
