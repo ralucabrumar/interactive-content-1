@@ -20,13 +20,13 @@ Aceste evenimente sunt utile deoarece pot fi **urmărite** și **tratate** ori d
 
 Evenimentele DOM sunt de obicei utilizate împreună **cu o funcţie de gestionare**, care este executată **după** eveniment, ca reacție la acesta.
 
-Iatâ un exemplu despre cum să atașați un handler pentru un eveniment:
+Iatâ un exemplu despre cum să **atașați un handler** pentru un eveniment:
 
 ```js
 h1Ref.addEventListener('click', handlerFunction);
 ```
 
-În exemplul de mai sus, `handlerFunction` este atașați la `h1Ref` și urmează să fie executată **după ce** a fost **făcut clic** pe element.
+În exemplul de mai sus, `handlerFunction` este atașată la `h1Ref` și urmează să fie executată **după ce** a fost **făcut clic** pe element.
 
 Metoda `.addEventListener()` acceptă următorii parametri:
 
@@ -34,6 +34,6 @@ Metoda `.addEventListener()` acceptă următorii parametri:
 
 - **Funcţia de gestionare a evenimentului**
 
-Există un alt oparametru pțional la această metodâ, care va fi discutat mai târziu.
+Există un alt parametru opțional la această metodâ, care va fi discutat mai târziu.
 
 [/slide]
