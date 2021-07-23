@@ -6,9 +6,9 @@
 
 ## În această lecție ați învățat:
 
-- O programare API pentru documentele **XML** și **HTML**.
+- Un API pentru documentele **XML** și **HTML**
 
-- **Metodele** and **Proprietățile** ale DOM
+- **Metodele** și **proprietățile** lui DOM
 
 ```js
 let p = document.createElement('p');
@@ -27,7 +27,7 @@ h1.remove();
 container.removeChild(content);
 ```
 
-- **Accesarea și utilizarea** obiectelor browserului cu JavaScript
+- **Accesarea și utilizarea** obiectelor browser-ului cu JavaScript
 
 ```js
 console.log(navigator.deviceMemory);
@@ -41,6 +41,6 @@ history.back();
 
 - **Manipulările DOM**
 
-- O privire mai profundă asupra **operațiunilor de manipulare a DOM**
+- O privire mai profundă asupra **operațiilor de manipulare DOM**
 
 [/slide]
