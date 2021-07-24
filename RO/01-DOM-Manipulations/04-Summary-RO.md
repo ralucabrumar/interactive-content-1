@@ -4,36 +4,36 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/RO/JS-Advanced-DOM-Manipulations-36-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In această lecție ați învățat: 
+## În această lecție ați învățat: 
 
-- Bucla Eveniment 
-- Tipuri de Evenimente: `document.addEventListener('click', getEventType);`
-- Proprietățile și Metodele Obiectului Events 
+- Bucla de eveniment
+- Tipuri de evenimente: `document.addEventListener('click', getEventType);`
+- Proprietățile și metodele obiectukui de tip eveniment 
     - preventDefault: `event.preventDefault();`
     - stopPropagation: `event.stopPropagation();`
-- Organizatori de evenimente
-    - attach
+- Gestionarea evenimentelor
+    - atașarea unui ascultător de evenimente
     ```js
     button.addEventListener('click', () => {
     console.log('Button clicked.');
     });
     ```
-    - remove
+    - eliminarea unui ascultător de evenimente
      ```js
     button.removeEventListener('click', () => {
     console.log('Button event listener removed.');
     });
     ```
     
-## In următoarea lecție vom învăța despre:
+## În următoarea lecție veți învăța despre:
 
 - Ce este `this` 
 
-- Moduri de folosire ale cuvântului cheie `this` 
+- Moduri de utilizare a cuvântului cheie `this` 
 
-- Cum se folosește `this` in funcții
+- Utilizarea lui `this` în funcții
 
 - Legarea explicită 
 
-- Proprietățile obicetelor interne
+- Proprietăți interne ale obiectelor
 [/slide]
