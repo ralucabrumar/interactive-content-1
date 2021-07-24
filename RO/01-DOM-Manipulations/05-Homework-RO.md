@@ -17,17 +17,17 @@ function sections(input) {
 
 # Descriere
 
-**Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Sections.zip) **pentru această sarcină.**
+**Aici este un link către** [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Sections.zip) **pentru această sarcină.**
 
-Veți primi un **matrice** de șiruri.
+Veți primi o **matrice** de șiruri.
 
-Pentru fiecare text, creați un **div** cu un **paragraf** care are un șir în interior.
+Pentru fiecare text, creați un **div** cu un **paragraf** care conține șirul în interior.
 
 Fiecare paragraf este inițial ascuns, având atributul de afișare `display:none`.
 
-Adăugați un **click event listener** fiecărui **div** care afișează paragraful ascuns. 
+Adăugați un **ascultător pentru evenimentul de tip click** fiecărui **div** care afișează paragraful ascuns. 
 
-În final, puteți **adăuga** toate divs la elementul cu un **id** **conţinut**.
+În final, trebuie să **adăugați** toate `div-urile` la elementul cu **id-ul** **content**.
 
 ## Exemplu
 
@@ -172,15 +172,15 @@ function notification(){
 
 # Descriere
 
-**Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/02-Notification.zip) **pentru această sarcină.**
+**Aici este un link către** [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/02-Notification.zip) **pentru această sarcină.**
 
-Creați o **funcţie** care primește un șir  **mesaj** și îl **afişa** în interiorul unui **div** cu o **id notification** de 2 secunde.
+Creați o **funcţie** care primește un **mesaj** și îl **afişează** timp de 2 secunde în interiorul unui **div** cu **id-ul notification**.
 
-Acest **div** este inițial **ascuns**, dar când funcția este apelată, trebuie ca acesta să apară. 
+Acest **div** este inițial **ascuns**, dar când funcția este apelată, acesta trebuie afișat. 
 
-După 2 secunde, **ascunde** acest div.
+După 2 secunde, **ascundeți** acest div.
 
-In exemplul de mai jos, să apară o notificare, atunci când dăm click pe buton.
+În exemplul de mai jos, atunci când dăm click pe buton este afișată o **notificare**.
 
 ## Exemplu
 
@@ -381,19 +381,19 @@ function timeConverter(){
 
 # Descriere
 
-**Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/03-Time-Converter.zip) **pentru această sarcină.**
+**Aici este un link către** [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/03-Time-Converter.zip) **pentru această sarcină.**
 
-Creați un program care **converti** diferite unități de timp. 
+Creați un program care **convertește** diferite unități de timp. 
 
-Sarcina voastră este să adăugați un ascultător de evenimente **click** la toate butoanele `CONVERT`.
+Sarcina voastră este să adăugați un ascultător de evenimente de tip **click** la toate butoanele `CONVERT`.
 
-Când un buton este **clicked**, citește câmpul de intrare **corespunzător** și **afişa** valorile convertite în interiorul celorlalte trei câmpuri de intrare. 
+Când un buton este **apăsat**, citiți câmpul de intrare **corespunzător** și **afişați** valorile convertite în interiorul celorlalte trei câmpuri de intrare. 
 
-O zi este egală cu 24 ore, 1440 minute, 86400 secunde. 
+O zi este egală cu 24 ore, 1440 minute sau 86400 secunde. 
 
-De fiecare dată când dăm click pe buton, câmpurile de intrare se pot schimba, în funcție de valoarea adăugată. 
+De fiecare dată când dăm click pe buton, **câmpurile de intrare** trebuie **să se schimbe**, în funcție de **valoarea** adăugată. 
 
-De exemplu, dacă printăm în 48 ore și dăm click pe **convertit**, valoarea câmpului zile(days) se va schimba la **2**.
+De exemplu, dacă introducem 48 ore și dăm click pe **convert**, valoarea câmpului pentru zile se va schimba la **2**.
 
 
 # Exemplu
@@ -581,15 +581,15 @@ function lockedProfile(){
 
 # Descriere
 
-**Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/04.Locked-Profile-NEW.zip) **pentru această sarcină.**
+**Aici este un link către** [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/04.Locked-Profile-NEW.zip) **pentru această sarcină.**
 
-În această problemă, trebuie să, **creați o funcționalitate JavaScript** care **spectacol** și **ascunde** informațiile adiționale despre utilizatori. 
+În această problemă, trebuie să **creați o funcționalitate JavaScript** care **afișează** și **ascunde** informațiile adiționale despre utilizatori. 
 
-Când dăm click pe butonul `Show more` atunci **informații ascunse** din interiorul div va apărea, doar **dacă profilul nu este blocat**.
+Când dăm click pe butonul `Show more`, **informațiile ascunse** din interiorul `div-ului` trebuie să apară, doar **dacă profilul nu este blocat**.
 
 Dacă profilul curent este **blocat**, nu se va întâmpla nimic. 
 
-Dacă informația ascunsă este afișată și dacă închidem profilul din nou, butonul `Hide it` button **nu ar trebui să funcționeze**.
+Dacă informația ascunsă este afișată și dacă blocăm profilul din nou, butonul `Hide it` **nu ar trebui să funcționeze**.
 
 Altfel, când profilul este **deblocat** și dăm click pe butonul `Hide it`, câmpurile trebuie să fie din nou ascunse.
 
@@ -1436,29 +1436,29 @@ function encodeAndDecodeMessages(){
 
 # Descriere
 
-**Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/05-Encode-and-Decode-Messages.zip) **pentru această sarcină.**
+**Aici este un link către** [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/05-Encode-and-Decode-Messages.zip) **pentru această sarcină.**
 
-Creați o funcționalitate JavaScript care codifică și decodifică niște mesaje care circulă spre rețea.
+Creați o funcționalitate JavaScript care **codifică** și **decodifică** niște mesaje care circulă spre rețea.
 
 Programul trebuie să conțină două funcționalități.
 
-Prima este de a codifica mesajul dat și de a-l trimite la destinatar.
+**Prima** este de **a codifica mesajul dat și de a-l trimite la destinatar**.
 
-A doua este de a decodifica mesajul primit și de a-l afișa.
+**A doua** este de **a decodifica mesajul primit și de a-l afișa**.
 
-Când butonul `Encode and send it` este apăsat , ar trebui să primiți mesajul dat din prima zonă de text.
+Când butonul **"Encode and send it"** este apăsat, ar trebui să primiți mesajul dat din prima zonă de text.
 
 Când primiți mesajul curent, trebuie să îl codificați în felul următor:
 
-- Schimbați CODUL ASCII al fiecărui caracter din acel mesaj prin adăugarea lui 1 la NUMĂRUL ASCII curent care reprezintă acel caracter în mesaj
+- **Schimbați CODUL ASCII** al fiecărui caracter din acel mesaj prin adăugarea lui 1 la codul ASCII curent al caracterului
 
-- Eliberați zona de text a expeditorului și adăugați mesajul codificat în zona de text a destinatarului
+- **Eliberați zona de text a expeditorului** și **adăugați mesajul codificat** în **zona de text a destinatarului**
 
-După aceea, când butonul `Decode and read it` este apăsat, trebuie să luați mesajul codificat din zona de text și să aplicați logica inversă:
+După aceea, când butonul **"Decode and read it"** este apăsat, trebuie să luați mesajul codificat din zona de text și să aplicați logica inversă:
 
-- Scădeți 1 din valoarea curentă a NUMĂRULUI ASCII care reprezintă caracterul curent în acel mesaj
+- **Scădeți 1** din valoarea curentă a codului ASCII al caracterului
 
-- Înlocuiți mesajul codificat din zona de text a destinatarului cu mesajul decodificat pentru a putea fi citit
+- **Înlocuiți mesajul codificat** din zona de text a destinatarului cu mesajul decodificat pentru a putea fi citit
  
 # Exemplu
 
