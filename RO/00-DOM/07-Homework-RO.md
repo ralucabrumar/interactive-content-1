@@ -16,27 +16,27 @@ function subtraction(){
 
 # Descriere
 
-**Aveți un link către resursele** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Subtraction.zip) **pentru această sarcină**.
+**Aveți un link către** [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Subtraction.zip) **pentru această sarcină**.
 
-O pagină HTML conține **două câmpuri de text** cu **id**s "**firstNumber**" și "**secondNumber**". 
+O pagină HTML conține **două câmpuri de text** cu **id-urile** "**firstNumber**" și "**secondNumber**". 
 
-Scrieți o funcție pentru a **extrage** valorile din aceste câmpuri de text și afișați rezultatul în `<div>` numit "**result**".
+Scrieți o funcție pentru a **extrage** valorile din aceste câmpuri de text și afișați rezultatul într-un `<div>` numit "**result**".
 
 ## Cod HTML și JavaScript
 
 Implementați descrierea de mai sus pentru a furniza următoarele funcționalități:
 
-- Funcția dvs. ar trebui să ia valorile "**firstNumber**" și "**secondNumber**", **să le transforme** în numere, **să extrage** al doilea număr din primul și apoi să adauge rezultatul la `<div>` cu `id="result"`
+- Funcția voastră trebuie să ia valorile "**firstNumber**" și "**secondNumber**", **să le transforme** în numere, **să scadă** al doilea număr din primul și apoi să adauge rezultatul la `<div>` cu `id="result"`
 
-- Funcția dvs. ar trebui să poată funcționa cu **orice 2 numere** din intrări, nu numai cu cele date în exemplu
+- Funcția voastră trebuie să poată funcționa cu **orice 2 numere** din intrări, nu doar cu cele date în exemplu
 
-## Example
+## Exemplu
 
 [image assetsSrc="JS-Advanced-DOM-Homework-1.png" /]
 
 [hints]
 [hint]
-Vedem că **textboxes** și `div`s au `id` attribuite pe ele:
+Vedem că **căsuțele pentru text** și `div` au atribute `id`:
 
 ```js
 <div id="wrapper">
@@ -51,9 +51,9 @@ Vedem că **textboxes** și `div`s au `id` attribuite pe ele:
 Putem lua numerele direct din câmpul de intrare utilizând funcția `getElementById()`.
 [/hint] 
 [hint]
-Dupa ce am luat elementele din DOM, este timpul de a efectua munca actuala.
+Dupa ce am luat elementele din DOM, este timpul să efectuăm munca propriu-zisă.
 
-Obținem valorile celor două **textboxes**. 
+Obținem valorile celor două **căsuțe de text**. 
 
 ```js
 let firstNumber = document
@@ -63,14 +63,14 @@ let secondNumber = document
   .getElementById('secondNumber').value;
 ```
 
-Valoarea unui textbox, așa cum ne-am așteptat, este **text**.
+Valoarea uneia, așa cum ne-am așteptat, este **text**.
 
-Pentru a obține un **number**, trebuie să folosim o funcție pentru a le **analiza**.
+Pentru a obține un **număr**, trebuie să folosim o funcție pentru a le **transforma**.
 [/hint] 
 [hint]
-Tot ce a mai rămas acum este să adăugați rezultatul la `div`.
+Tot ce a mai rămas acum de făcut este să adăugăm rezultatul la `div`.
 
-Folosim aceeași funcție pentru a obține elementul **result** după `id` și pentru a-i schimba **conținutul de text** la rezultatul **extragerii**.
+Folosim aceeași funcție pentru a obține elementul **result** după `id` și pentru a-i schimba **conținutul de text** la rezultatul **scpderii**.
 
 ```js
 function subtract() {
@@ -157,7 +157,7 @@ yes
 
 [slide hideTitle]
 
-# Problemă: Fill Dropdown menu
+# Problemă: Fill Dropdown
 
 [code-task title="Fill Dropdown" taskId="js-advanced-DOM-Fill-Dropdown"  executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
@@ -170,13 +170,13 @@ function fillDropdown(){
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
-**Aveți un link către resursele** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/02-Fill-Dropdown.zip) **pentru această sarcină**.
+**Aveți un link către** [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/02-Fill-Dropdown.zip) **pentru această sarcină**.
 
-Sarcina dvs. este să luați valorile din câmpurile **input** cu **id**s "**newItemText**" și "**newItemValue**.
+Sarcina voastră este să luați valorile din câmpurile **de intrare**, cu **id-urile** "**newItemText**" și "**newItemValue**.
 
-Apoi trebuie să **creați** și să **adăugați** un `<option>` la `<select>` cu un **id** al "**menu**".
+Apoi trebuie să **creați** și să **adăugați** un `<option>` la `<select>`, cu **id-ul** "**menu**".
 
 ## Exemple
 
@@ -184,16 +184,16 @@ Apoi trebuie să **creați** și să **adăugați** un `<option>` la `<select>` 
 
 [hints]
 [hint]
-**Funcția** dvs. ar trebui să ia **valorile** `newItemText` și `newItemValue`.
+**Funcția** voastră trebuie să ia **valorile** `newItemText` și `newItemValue`.
 [/hint] 
 [hint]
-După aceea, ar trebui să **creați** un nou element `option` și să setați `textContent` și **valoarea** sa la cele nou recuperate.
+După aceea, trebuie să **creați** un nou element `option` și să setați `textContent` și **valoarea** sa la cele nou recuperate.
 [/hint] 
 [hint]
-După ce ați făcut toate acestea, ar trebui **să adaugați** nou-creatul `<option>` ca **child** către elementul `<select>` cu id "**menu**".
+După ce ați făcut toate acestea, trebuie **să adaugați** elementul `<option>` nou drept **copil** pentru elementul `<select>` cu id-ul "**menu**".
 [/hint] 
 [hint]
-În cele din urmă, ar trebui să **ștergeți** valoarea celor două câmpuri **de intrare** - `input`.
+În cele din urmă, trebuie să **ștergeți** valoarea celor două câmpuri **de intrare** - `input`.
 [/hint] 
 [/hints] 
 
@@ -324,39 +324,39 @@ function accordion(){
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
-**Aveți un link către resursele** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/03-Accordion.zip) **pentru aceasta sarcina.**
+**Aveți un link către** [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/03-Accordion.zip) **pentru această sarcină.**
 
 Veți primi un fișier **HTML**.
 
-Sarcina dvs. este de a afișa **mai multe/mai puține** informații apăsând butonul `[ADD]`  (nu este un buton real, ci un **span** care are atașat evenimentul `onclick`).
+Sarcina voastră este de a afișa **mai multe/mai puține** informații apăsând butonul `[ADD]` (nu este un buton real, ci un **span** care are atașat evenimentul `onclick`).
 
-Când este apasat butonul `[More]`, acesta **dezvăluie** conținutul unui **ascuns** `div`, iar textul butonului este **schimbat** în `[Less]`.
+Când este apăsat butonul `[More]`, acesta **dezvăluie** conținutul unui `div` **ascuns**, iar textul butonului este **schimbat** în `[Less]`.
 
-Când același link este apasat **din nou**(acum citind **Less**), **ascundeți**  `div` și **schimbați** textul linkului în **More**.
+Când același link este apasat **din nou** (acum fiind **Less**), **ascundeți** `div-ul` și **schimbați** textul linkului în **More**.
 
-Acțiunea linkului ar trebui să fie **toggleable** (ar trebui să puteți apasa butonul **click** de **infinit** de ori).
+Acțiunea linkului ar trebui să fie **toggleable** (ar trebui să puteți apăsa butonul de un număr **infinit** de ori).
 
-## Example
+## Exemplu
 
 [image assetsSrc="JS-Advanced-DOM-Homework-6.gif" /]
 
 [hints]
 [hint]
-Pentru a **schimba** conținutul textului al unui buton, puteți utiliza `getElementsByClassName`.
+Pentru a **schimba** conținutul textului unui buton, puteți utiliza `getElementsByClassName`.
 
-Cu toate acestea, aceasta returnează o **colecție** și avem nevoie doar de **un** element din aceasta, așa că modul corect este să folosiți `getElementsByClassName('button')[0]`.
+Însă, aceasta returnează o **colecție** și avem nevoie doar de **un** element din aceasta, așa este mai corect este să folosiți `getElementsByClassName('button')[0]`.
 
-Aceasta va **returna** elementul necesar `span`.
+Aceasta va **returna** elementul `span` necesar.
 [/hint] 
 [hint]
-După aceea, ar trebui să schimbăm **stilul de afișare** al `div` cu un `id` de "**extra**".
+După aceea, trebuie să schimbăm **stilul de afișare** al `div-ului` cu `id-ul` "**extra**".
 
 Dacă stilul de afișare este "**none**", ar trebui să-l **schimbăm** în "**block**" și **opusul**.
 [/hint] 
 [hint]
-Împreună cu toate acestea, ar trebui **să schimbăm** conținutul textului a **butonului** de `[Less]`/`[More]`.
+Împreună cu toate acestea, trebuie **să schimbăm** conținutul textului **butonului** la `[Less]`/`[More]`.
 [/hint] 
 [/hints]
 
@@ -489,17 +489,17 @@ function orderTheNames(){
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
-**Aveți un link către resursele** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/04-Order-the-Names.zip) **pentru aceasta sarcina.**
+**Aveți un link către** [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/04-Order-the-Names.zip) **pentru această sarcină.**
 
 Scrieți o funcție **care ordonează numele în ordine alfabetică**.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-7.jpg" /]
 
-Veți primi un **nume al unui student ca input**.
+Veți primi un **nume al unui student ca date de intrare**.
 
-Când butonul  **"Register"** este **apasat**, ar trebui să adăugați numele studentului dat în baza de date SoftUni, păstrând **ordinea alfabetică**.
+Când butonul **"Register"** este **apăsat**, trebuie să adăugați numele studentului dat în baza de date SoftUni, păstrând **ordinea alfabetică**.
 
 De exemplu, dacă îl înregistrăm pe **David**, numele său ar trebui să apară în coloana **D**.
 
@@ -507,7 +507,7 @@ De exemplu, dacă îl înregistrăm pe **David**, numele său ar trebui să apar
 
 [image assetsSrc="JS-Advanced-DOM-Homework-9.jpg" /]
 
-Dacă **primiți mai multe nume cu aceeași literă de pornire**, ar trebui să **alăturați toate numele** prin comma și un spațiu **(", ")**.
+Dacă **primiți mai multe nume cu aceeași literă de pornire**, trebuie să **alăturați toate numele** printr-o virgulă și un spațiu **(", ")**.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-10.jpg" /]
 
@@ -555,7 +555,7 @@ Obțineți toate elementele **list item** folosind `getElementsByTagName`.
 În funcție de `innerHTML` al list item-ului corespunzător, puteți:
 
 - **Să adăugați** noul nume, precedat de **o virgulă și un spațiu** (**", "**)
-- Dacă se întâmplă să fie primul pentru litera dată, **adăugați**-l simplu
+- Dacă se întâmplă să fie primul pentru litera dată, **adăugați**-l pur și simplu
 
 ```js
 const liElements = 
@@ -574,7 +574,7 @@ else {
 nameInput.value = '';
 ```
 
-Țineți minte să ștergeți **valoarea casetei de intrare** după aceea.
+Nu uitați să ștergeți **valoarea casetei de intrare** după aceea.
 
 [/hint] 
 [/hints]
@@ -994,21 +994,21 @@ function chatRoom(){
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
-**Aveți un link către resursele** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/05-Chat-Room.zip) **pentru această sarcină**.
+**Aveți un link către** [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/05-Chat-Room.zip) **pentru această sarcină**.
 
 Scrieți o **funcție** pentru a crea funcționalitatea de **chat room**.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-11.jpg" /]
 
-**Notă:** Nu uitați să **add an event listener** la **send button!**
+**Notă:** Nu uitați să **adăugați un ascultător de evenimente** la **butonul de trimitere!**
 
-**Noul** `div` element cu clasa **"message my-message"** ar trebui să conțină **mesajul curent** care urmează să fie trimis.
+**Noul** `div` element cu clasa **"message my-message"** trebuie să conțină **mesajul curent** care urmează să fie trimis.
 
-**Current** `div` ar trebui să fie adăugat la `div` cu `id="chat_messages"`.
+`div-ul` **curent** trebuie să fie adăugat la `div-ul` cu `id="chat_messages"`.
 
-**Intrarea ar trebui să fie ștearsă la fiecare clic al butonului de trimitere**.
+**Intrarea trebuie să fie ștearsă la fiecare clic al butonului de trimitere**.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-12.jpg" /]
 
@@ -1431,35 +1431,35 @@ function numpadCalculator(){
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
-**Aveți un link către resursele** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/06-Numpad-Calculator.zip) **pentru această sarcină**.
+**Aveți un link către** [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/06-Numpad-Calculator.zip) **pentru această sarcină**.
 
 Scrieți o **funcție** care implementează un **calculator** cu următoarele funcționalități.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-14.png" /]
 
-Când unul dintre **butoanele este apasat**, valoarea acestuia trebuie afișată în câmpul "**Expression**" (`#expressionOutput`).
+Când unul dintre **butoane este apăsat**, valoarea acestuia trebuie afișată în câmpul "**Expression**" (`#expressionOutput`).
 
 De exemplu, dacă facem clic pe butonul cu valoarea **9**, **rezultatul** așteptat ar trebui să fie:
 
 [image assetsSrc="JS-Advanced-DOM-Homework-15.png" /]
 
-Dacă câmpul **current Expression** (`#expresisonOutput`) conține întreaga expresie matematică (**left operand**, **operator** and **right operand**: "**9 + 2**", de exemplu), **rezultatul** așteptat ar trebui să fie:
+Dacă câmpul **Expression** curent (`#expresisonOutput`) conține întreaga expresie matematică (**operandul din stânga**, **operatorul** și **operand din dreapta**: "**9 + 2**", de exemplu), **rezultatul** așteptat ar trebui să fie:
 
 [image assetsSrc="JS-Advanced-DOM-Homework-16.png" /]
 
-Când se apasă **equal sign** `=`, rezultatul acelei expresii **ar trebui să apară în câmpul Result** (`#resultOutput`).
+Când se apasă **semnul egal** `=`, rezultatul acelei expresii **trebuie să apară în câmpul Result** (`#resultOutput`).
 
 [image assetsSrc="JS-Advanced-DOM-Homework-17.png" /]
 
-În caz contrar, dacă creăm o **expresie nevalidă**, cum ar fi `"99 +" (without second/right operand)`, și facem clic pe  equal sign `=`, rezultatul așteptat ar trebui să fie:
+În caz contrar, dacă creăm o **expresie nevalidă**, cum ar fi `"99 +" (fără operandul stâng/drept)`, și facem clic pe semnul egal `=`, rezultatul așteptat ar trebui să fie:
 
 [image assetsSrc="JS-Advanced-DOM-Homework-18.png" /]
 
-Butonul "**Clear**" ar trebui să șteargă atât câmpurile de Expresie, cât și Rezultatele (`#expressionOutput` and `#resultOutput`)
+Butonul "**Clear**" trebuie să șteargă atât câmpul Expression, cât și Result (`#expressionOutput` și `#resultOutput`)
 
-De exemplu, dacă avem următoarea expresie
+De exemplu, dacă avem următoarea expresie:
 
 [image assetsSrc="JS-Advanced-DOM-Homework-19.png" /]
 
@@ -2006,27 +2006,27 @@ function numberConvertor(){
 [/code-editor]
 [task-description]
 
-# Description
+# Descriere
 
-**Aveți un link către resursele** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/07-Number-Convertor.zip) **pentru aceasta sarcina**.
+**Aveți un link către** [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/07-Number-Convertor.zip) **pentru această sarcină**.
 
-Scrieți o funcție care **convertește** un **număr zecimal** în **binar** și **hexazecimal**.
+Scrieți o funcție care **convertește** un **număr zecimal** în reprezentarea sa **binară** și **hexazecimală**.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-21.jpg" /]
 
 Numărul dat va fi întotdeauna în **format zecimal**.
 
-Meniul selectat "**From**" va avea doar o opțiune **Decimal**, dar meniul selectat "**To**" va avea **două opțiuni:** **binary** și **hexadeicmal**.
+Meniul de selecție "**From**" va avea doar o opțiune **Decimal**, dar meniul de selecție "**To**" va avea **două opțiuni:** **binary** și **hexadeicmal**.
 
-Aceasta înseamnă că programul nostru ar trebui să aibă funcționalitatea de a **converti zecimal** î **binary** și **decimal** în **hexadecimal**.
+Aceasta înseamnă că programul nostru ar trebui să aibă funcționalitatea de a **converti un număr zecimal** în reprezentarea sa **binară** și **hexazecimală**.
 
-Rețineți că meniul "**To**" **select menu** este gol în mod implicit.
+Rețineți că meniul de selecție "**To**" este gol în mod implicit.
 
 Trebuie să introduceți cele două opțiuni (**binary** și **hexadecimal**) înăuntru înainte de a continua.
 
-De asemenea, acestea ar trebui să aibă **valori** (binary și hexadecimal).
+De asemenea, acestea ar trebui să aibă **valori** (binare și hexazecimale).
 
-- Când **se apasă** butonul `[Convert it]` rezultatul așteptat ar trebui să apară în câmpul de input `[Result]`
+- Când **se apasă** butonul `[Convert it]` rezultatul așteptat trebuie să apară în câmpul de intrare `[Result]`
 
 [image assetsSrc="JS-Advanced-DOM-Homework-22.jpg" /]
 
