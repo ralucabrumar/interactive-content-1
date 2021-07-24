@@ -1,7 +1,7 @@
 # Bucla de Eveniment
 
 [slide hideTitle]
-# Callbacks
+# Apeluri Inverse
 
 **JavaScript** este executat de cele mai multe ori **în browser.**
 
