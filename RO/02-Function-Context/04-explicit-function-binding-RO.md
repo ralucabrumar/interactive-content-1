@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Explicit Binding
+# Legarea explicită (explicit binding)
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-16-17-explicit-binding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
