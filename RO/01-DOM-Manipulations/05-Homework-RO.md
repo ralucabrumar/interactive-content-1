@@ -1689,23 +1689,23 @@ function tableSearchEngine(){
 
 # Descriere
 
-**Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/06.Table-Search-Engine-NEW.zip) **pentru această sarcină.**
+**Aici este un link către** [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/06.Table-Search-Engine-NEW.zip) **pentru această sarcină.**
 
-Create a function that searches in a table by a given input.
+Creați o funcție care efectuează căutări într-un tabel în funcție de datele de intrare furnizate. 
 
-When the `Search` button is clicked, go through all cells in the table, except for the first row, which is the header of the table: Student name, Student email, and Student course.
+Când butonul `Search` este apăsat, parcurgeți toate celulele din tabel, cu excepția primului rând, care este antetul tabelului: Student name, Student email și Student course.
 
-Check if the given input has a match. 
+Verificați dacă există potriviri pentru datele introduse.
 
-Check for both full words and single letters.
+Verificați atât cuvinte complete, cât și litere unice.
 
-If any of the rows contain the submitted string, add a **select class** to that row.
+Dacă vreunul dintre rânduri conține șirul introdus, adăugați o **clasă de selecție** pentru acel rând.
 
 **Țineți cont de faptul că mai multe rânduri pot conține șirul dat.**
 
-If there is no match, **nu ar trebui să se întâmple nimic**.
+Dacă nu există nicio potrivire, **nu ar trebui să se întâmple nimic**.
 
-Note: After every search, **ștergeți intrarea** field and remove all already selected classes, if any exist from the previous search, in order to make sure the new search will contain only the new result.
+Notă: După fiecare căutare, **goliți câmpul de intrare** și ștergeți toate clasele deja selectate, dacă acestea există în urma căutărilor anterioare, pentru a vă asigura că noua căutare va conține doar rezultatul nou.
 
 # Exemplu
 
@@ -2251,9 +2251,9 @@ function furniture(){
 
 # Descriere
 
-**Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/07-Furniture.zip) **pentru această sarcină.**
+**Aici este un link către** [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/07-Furniture.zip) **pentru această sarcină.**
 
-O să primiți piese de mobilier ca o matrice de obiecte:
+O să primiți piese de mobilier sub forma unei matrice de obiecte:
 
 Fiecare obiect va avea un nume, un preț și un factor de decorare.
 
@@ -2755,15 +2755,15 @@ function cards(){
 
 # Descriere
 
-**Aici este un link către** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/08-Cards.zip) **pentru această sarcină.**
+**Aici este un link către** [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/08-Cards.zip) **pentru această sarcină.**
 
-Creați o funcție care verifică cărți, arată care dintre ele este mai mare,  și păstrează un istoric al toate mâinilor de cărți.
+Creați o funcție care verifică cărți, arată care dintre ele este mai mare, și păstrează un istoric al toate mâinilor de cărți.
 
-Prima dată, **adăugați evenimente de alegere pentru toate cărțile**.
+Prima dată, **adăugați evenimente de tip click pentru toate cărțile**.
 
 Când una dintre cărți este aleasă, fundalul curent al cărții trebuie schimbat cu imaginea `whiteCard.jpg` dată în schelet.
 
-Numele cărții trebuie adăugat la unul dintre elementele **span** în div cu `id="result"`.
+Numele cărții trebuie adăugat la unul dintre elementele **span** în div-ul cu `id="result"`.
 
 Dacă o carte **din partea de sus** este **aleasă**, adăugați numele cărții la **span-ul stâng**, prima dată goliți span-ul, altfel adăugați numele cărții la span-ul drept, care va fi al doilea sau ultimul span.
 
@@ -2773,7 +2773,7 @@ Cartea care este mai mare trebuie să aibă un chenar `2px solid green`, și cel
 
 Trebuie să eliminați elementele span care au valoarea cărților curente, când ambele sunt selectate, și câștigătorul este selectat.
 
-După fiecare mână, adăugați numele cărților curente în **history div** în formatul următor:
+După fiecare mână, adăugați numele cărților curente în **div-ul history** în formatul următor:
 `[{top side card name} vs {bottom side card name}]`
 
 # Exemplu
