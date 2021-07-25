@@ -14,33 +14,25 @@ class Company {
 [task-description]
 # Descriere
 
-Scrieți o Company Class (Clasă cu numele Company), care să aibă funcționalitatea descrisă mai jos.
+Scrieți o clasă numită **company**, care să aibă funcționalitatea descrisă mai jos.
 
-**1. Funcționalitatea**
+## `constructor()`:
 
-`Constructor()`:
+Trebuie să aibă proprietatea `departments`- o matrice goală
 
-Ar trebui să aibă această unică proprietate: `departments`- o matrice goală
+"**AddEmployee**(\{**username**\}, \{**Salary**\}, \{**Position**\}, \{**Department**\})": această funcție trebuie să adauge în departament un angajat nou cu numele dat
 
-"**AddEmployee**(\{**username**\}, \{**Salary**\}, \{**Position**\}, \{**Department**\})":
+- Dacă unul dintre parametrii trecuți este un șir gol **""**, **undefined** sau **null**, această funcție trebuie să genereze o eroare cu următorul mesaj: "**Invalid input!**"
 
-Această funcție trebuie să adauge un nou angajat cu numele dat, la departament.
+- Dacă salariul este mai mic de 0, această funcție trebuie să genereze o eroare cu următorul mesaj: "**Invalid input!**"
 
-- Dacă unul dintre parametrii trecuți este un șir gol **""**, nedefinit sau nul, această funcție ar trebui să genereze o eroare cu următorul mesaj:
-
-"**Invalid input!**"
-
-- Dacă salariul este mai mic de 0, această funcție ar trebui să genereze o eroare cu următorul mesaj:
-
-"**Invalid input!**"
-
-- Dacă noul angajat este angajat cu succes, ar trebui să-l adăugați în matricea departamentelor și să returnați următorul mesaj:
+- Dacă noul angajat este angajat cu succes, trebuie să îl adăugați în matricea departamentelor și să returnați următorul mesaj:
 
 "**New employee is hired. Name:** \{**name**\}. **Position:** \{**position**\}"
 
-`bestDepartment()`:
+## `bestDepartment()`:
 
-Această **funcție** trebuie să tipărească departamentul cu cel mai mare salariu mediu și angajații săi, sortați după salariul lor în funcție descrescătoare și după nume, în următorul format:
+Această **funcție** trebuie **să tipărească departamentul cu cel mai mare salariu mediu și angajații săi**, sortați descrescător în funcție de salariul lor și nume, în următorul format:
 
 "**Best department is:** \{**best department's name**\}
 **Average salary:** \{**best department's average salary**\}
@@ -50,15 +42,13 @@ Această **funcție** trebuie să tipărească departamentul cu cel mai mare sal
 ..."
 
 
-**2. Trimiterea**
+## Trimitere
 
-Trimiteți doar **Company class**.
+Trimiteți doar clasa Company.
 
-**3. Exemplu**
+## Exemple
 
-Acesta este un exemplu de cum **se intenționează să fie folosit** codul:
-
-**Exemplu de utilizare a codului**
+## Intrare
 
 ```js
 let c = new Company();
@@ -71,9 +61,7 @@ c.addEmployee('Peter', 1000, 'graphical designer', 'Marketing');
 c.addEmployee('George', 1350, 'HR', 'Human resources');
 console.log(c.bestDepartment());
 ```
-
-**Rezultatul**
-
+## Ieșire
 ```
 Best Department is: Construction
 Average salary: 1500.00
@@ -211,7 +199,7 @@ function fibonacci() {
 ## Descriere
 Scrieți o funcție care returnează următorul număr Fibonacci, începând de la 0, 1.
 
-Folosiți o **closure** pentru a păstra numărul curent.
+Folosiți **closure** pentru a păstra numărul curent.
 
 ## Intrare
 Nu va exista nicio intrare.
@@ -219,9 +207,9 @@ Nu va exista nicio intrare.
 ## Ieșire
 Ieșirea trebuie să fie un număr Fibonacci și trebuie să fie **returnată** din funcție.
 
-## Exemplu
+## Exemple
 
-**Exemplu de execuție**
+**Exemplu de execuție:**
 
 ```js
 let fib = getFibonator();
@@ -331,39 +319,31 @@ class Hex {
 ```
 [/code-editor]
 [task-description]
+## Descriere
+Scrieți o clasă numită Hex, care acceptă funcționalitatea descrisă mai jos.
 
-**1. Sarcina ta**
-Scrieți o Hex class (clasă Hex), care acceptă funcționalitatea descrisă mai jos.
-
-**2. Funcționalitate**
+## Funcționalitate
 
 Constructor(`{value}`)
 
 Trebuie să aibă **1** proprietate:
-- **value** - number
+- **value** - număr
 
 Funcții:
-- `ValueOf()`:
-Această funcție ar trebui să returneze valoarea proprie Hex class (clasei Hex).
+- `ValueOf()`: această funcție trebuie să returneze proprietatea **value** a clasei Hex
 
-- `ToString()`:
-Această funcție își va arăta valoarea hexazecimală începând cu `0x`.
+- `ToString()`: această funcție va afișa valoarea hexazecimală începând cu `0x`
 
-- `Plus({number})`:
-Această funcție ar trebui să adauge un număr sau un obiect Hex și să returneze un nou obiect Hex.
+- `Plus({number})`: această funcție trebuie să adauge un număr sau un obiect Hex și să returneze un nou obiect Hex
 
-- `Minus({number})`:
-Această funcție ar trebui să scadă un număr sau un obiect Hex și să returneze un nou obiect Hex.
+- `Minus({number})`: această funcție trebuie să scadă un număr sau un obiect Hex și să returneze un nou obiect Hex
 
-- `Parse({string})`:
-Creați o parse class method (metodă de clasă de analiză) care poate analiza numerele hexazecimale și le poate converti în numere zecimale standard.
+- `Parse({string})`: creați o metodă **parse** care poate analiza numerele hexazecimale și le poate converti în numere zecimale standard
 
-**3. Trimiterea**
-Trimiteți doar **Hex class**.
+## Trimitere
+Trimiteți doar **clasa Hex**.
 
-**4. Exemplu**
-Acesta este un exemplu de cum **se intenționează să fie folosit** codul:
-
+## Exemplu
 
 ## Intrare
 
@@ -495,17 +475,15 @@ function table(){
 [task-description]
 ## Descriere
 
-Utilizați resursele puse la dispoziție [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/04-JS-Advanced-Function-Context-Homework-Resources.zip) pentru a finaliza această problemă. 
+Utilizați [resursele](https://videos.softuni.org/resources/javascript/javascript-advanced/04-JS-Advanced-Function-Context-Homework-Resources.zip) puse la dispoziție pentru a finaliza această problemă. 
 
 **Notă: trebuie să finalizați această sarcină fără a schimba nimic în fișierul HTML dat (index.html).**
 
 [image assetsSrc="function-context-07.png" /]
 
-**1. Sarcina ta**
-
 Scrieți codul JavaScript lipsă pentru ca aplicația **Table** să funcționeze conform așteptărilor.
 
-Când faceți **clic** pe un element din tabel, trebuie să schimbați **culoarea de fundal** a acestuia la `#413f5e`. 
+Când **apăsați** pe un element din tabel, trebuie să schimbați **culoarea de fundal** a acestuia la `#413f5e`. 
 
 ```js
 <table class="minimalistBlack">
@@ -534,15 +512,15 @@ Când faceți **clic** pe un element din tabel, trebuie să schimbați **culoare
 
 [image assetsSrc="function-context-09.png" /]
 
-Dacă elementul pe care ați dat clic **are deja** o proprietate **style**, trebuie **să îl eliminați**.
+Dacă elementul pe care ați apăsat **are deja** o proprietate **style**, trebuie **să o eliminați**.
 
 [image assetsSrc="function-context-10.png" /]
 
-Dacă **dați clic** pe unul dintre elemente după care dați clic pe **altul**, proprietatea stilului primului element trebuie să fie **eliminată** și trebuie să **schimbați** **culoarea de fundal** a **noului element pe care ați dat clic**.
+Dacă **dați clic** pe unul dintre elemente, iar după care dați clic pe **altul**, proprietatea de tip style a primului element trebuie să fie **eliminată** și trebuie să **schimbați** **culoarea de fundal** a **noului element pe care ați dat clic**.
 
 [image assetsSrc="function-context-11.png" /]
 
-**Notă: nu trebuie să schimbați capul tabelului, chiar dacă se face clic pe acesta.**
+**Notă: nu trebuie să schimbați capul tabelului, chiar dacă apăsați pe el.**
 
 [/task-description]
 [code-io /]
@@ -817,13 +795,13 @@ function getArticleGenerator(articles) {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți o funcție care **afișează articole** secvențial pe o pagină web atunci când utilizatorul **face clic** pe un buton.
+Scrieți o funcție care **afișează articole** secvențial pe o pagină web atunci când utilizatorul **apasă** pe un buton.
 
-Veți primi o **matrice de șiruri** care vor inițializa programul.
+Veți primi o **matrice de șiruri** care va inițializa programul.
 
-Trebuie să returnați o funcție care păstrează matricea inițială în closure și de fiecare dată când este apelată, preia primul element din matrice și îl afișează pe pagina web, într-un `div` cu ID-ul "**content**". 
+Trebuie să returnați o funcție care păstrează matricea inițială în **closure** și de fiecare dată când este apelată, preia primul element din matrice și îl afișează pe pagina web, într-un `div` cu ID-ul "**content**". 
 
-Dacă nu mai sunt elemente rămase, funcția dvs. nu ar trebui să facă nimic.
+Dacă nu mai sunt elemente rămase, funcția voastră nu trebuie să facă nimic.
 
 ## Cod HTML și JavaScript
 Vi se oferă următorul cod **HTML**:
@@ -865,21 +843,23 @@ function getArticleGenerator(articles) {
 }
 ```
 
-Funcția dvs. va fi apelată automat, **nu este necesar** să atașați event listeners (observatori de evenimente).
+Funcția voastră va fi apelată automat, **nu este necesar** să atașați ascultători de evenimente.
 
 ## Intrare
-Veți primi și **o matrice** de șiruri.
+Veți primi **o matrice** de șiruri.
 
 ## Ieșire
-Returnează o **funcție** care afișează elementele matricei pe pagina web.
+Returnați o **funcție** care afișează elementele matricei pe pagina web.
 
-## Exemplu 1:
+# Exemple
+
+## Exemplul 1:
 [image assetsSrc="function-context-12.png" /]
 
-## Exemplu 2:
+## Exemplul 2:
 [image assetsSrc="function-context-13.png" /]
 
-## Exemplu 3:
+## Exemplul 3:
 [image assetsSrc="function-context-14.png" /]
 
 [/task-description]
