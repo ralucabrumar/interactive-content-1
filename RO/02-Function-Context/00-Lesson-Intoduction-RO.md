@@ -15,11 +15,11 @@
 **2. Utilizare cuvântului cheie "this"** 
 - La ce se referă `this` în diferite situații
 
-**3. "this" în Funcții**
+**3. "this" în funcții**
 - Comportamentul cuvântului cheie `this` în funcțiile imbricate și funcțiile săgeată
 
-**4. Explicit Binding**
-- Definiția **binding**, folosind `call()`, `bind()` și `apply()` pentru a schimba contextul funcțiilor.
+**4. Legare explicită**
+- Definiția **legării**, folosind `call()`, `bind()` și `apply()` pentru a schimba contextul funcțiilor
 
 **5. Proprietăți interne ale obiectelor**
 - Utilizarea proprietăților interne pentru a schimba comportamentul proprietății
