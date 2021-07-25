@@ -1,16 +1,16 @@
-# Internal Object Properties
+# Proprietăți Interne ale Obiectelor
 
 [slide hideTitle]
 
-# Internal Properties
+# Proprietăți Interne
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-27-28-internal-object-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="function-context-06.png" /]
 
-Toate proprietățile unui obiect au propriile proprietăți și anume **Enumerable , Configurable, Writable** și **Value**.
+Toate proprietățile unui obiect au propriile lor proprietăți, și anume **Enumerable, Configurable, Writable** și **Value**.
 
-Pentru a enumera proprietățile interne ale oricărei proprietăți a obiectului, utilizați `Object.getOwnPropertyDescriptor(yourObject, 'propertyName');`
+Pentru **a lista proprietățile interne** ale oricărei proprietăți a unui obiect, utilizați `Object.getOwnPropertyDescriptor(yourObject, 'propertyName');`
 
 ```js
 let person = {
@@ -23,7 +23,7 @@ const descriptor = Object.getOwnPropertyDescriptor(person, 'name');
 console.log(descriptor);
 ```
 
-**Ieșire**
+**Ieșire**:
 ```js
 {
   value: 'Billy',
@@ -33,22 +33,22 @@ console.log(descriptor);
 }
 ```
 
-- **Enumerable**: Putem enumera proprietățile obiectelor care sunt setate la **enumerable:true** cu bucla `for..in` sau le putem enumera folosind metoda `Object.keys()`
+- **Enumerable**: Putem enumera proprietățile care sunt setate la **enumerable:true** cu bucla `for..in` sau le putem lista folosind metoda `Object.keys()`
 
-- **Configurable** - folosit pentru a modifica comportamentul proprietății
+- **Configurable**: folosit pentru a modifica comportamentul proprietății
 
-Setarea **configurable: false** face ca proprietatea să nu poată fi ștearsă. 
+   - Setarea **configurable: false** face ca proprietatea să nu poată fi ștearsă 
 
-Numai proprietățile care sunt **configurable** pot fi șterse.
+   - Numai proprietățile care sunt **configurable** pot fi șterse
 
-- **Writable** - proprietăți marcate ca **writable:true** pot fi modificate și valorile lor pot fi actualizate prin simpla atribuire a unei noi valori acestora
+- **Writable** - proprietățile marcate ca **writable:true** pot fi modificate și valorile lor pot fi actualizate prin simpla atribuire a unei noi valori pentru acestea
 
-- **Value** - vă permite să modificați valoarea proprietății chiar și atunci când este setată la **writable:false** utilizând `Object.defineProperty()`
+- **Value** - ne permite să modificăm valoarea proprietății chiar și atunci când aceasta este setată la **writable:false**, utlizând `Object.defineProperty()`
 
 [/slide]
 
 [slide hideTitle]
-# Non-Enumerable Properties
+# Proprietăți Non-Enumerable
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-29-objects-non-enumerable-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -73,18 +73,18 @@ name: 'Billy'
 age: 50
 ```
 
-Notă: În loc de **for loop (bucla for)** puteți obtine rezultatul cu `Object.keys(person)` iar proprietățile vor fi returnate ca o matrice.
+Notă: În locul utilizării unei **bucle for**, puteți afișa rezultatul cu `Object.keys(person)`, iar proprietățile vor fi returnate sub forma unei matrice.
 
 ```js
 console.log(Object.keys(person));
 //output -> [ 'name', 'age' ]
 ```
 
-Putem modifica valoarea proprietăților interne utilizând metoda `Object.defineProperty()`. 
+Putem modifica valoarea proprietăților interne cu ajutorul metodei `Object.defineProperty()`. 
 
-Puteți modifica una sau chiar puteți modifica toate proprietățile interne simultan.
+Puteți modifica una sau chiar toate proprietățile interne simultan.
 
-În acest exemplu, vom schimba valoarea **age (vârstei)** și setam **enumerable** la **false**.
+În acest exemplu, vom schimba valoarea proprietății **age** și vom seta **enumerable** la **false**.
 
 ```js
 Object.defineProperty(object1, 'property1', {
@@ -111,30 +111,30 @@ for (const property in person) {
 }
 ```
 
-Acum se aștepta ca rezultatul să fie:
+Acum rezultatul așteptat este:
 
 ```js
 name: Billy
 ```
 
-Observați cum vârsta nu mai este trimisă pe consolăă Este încă în interiorul obiectului, dar nu mai poate fi enumerat!
+Observați că vârsta nu mai este afișată pe consolă. Aceasta se află încă în interiorul obiectului, dar nu mai poate fi enumerată.
 
-De asemenea, puteți încerca să enumerați proprietățile cu `Object.keys(person)` pentru a lista proprietățile, dar singura proprietate vizibilă va fi **name (nume)**.
+De asemenea, puteți încerca să enumerați proprietățile cu `Object.keys(person)`, dar singura proprietate vizibilă va fi **name**.
 
-Nici imprimarea obiectului în sine cu `console.log(person)` nu va imprima proprietatea **age**.
+Nici imprimarea obiectului propriu-zis cu `console.log(person)` nu va avea ca rezultat imprimarea proprietații **age**.
 
-**Proprietățile care nu sunt enumerabile** nu sunt serializate când se utilizează `JSON.stringify()`.
+**Proprietățile care nu sunt enumerabile** nu sunt serializate atunci când se utilizează `JSON.stringify()`.
 
 [/slide]
 
 [slide hideTitle]
-# Non-Writable Properties
+# Proprietăți Non-Writable 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-30-objects-non-writable-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Valorile proprietăților **non-writable (care nu se pot modifica)** nu pot fi modificate folosind atribuții.
+Valorile proprietăților **non-writable** nu pot fi modificate prin atribuire.
 
-Folosind `Object.defineProperty` prin specificarea unei proprietăți care nu există în obiectul nostru, putem adăuga o proprietate complet nouă obiectului respectiv, putem seta valoarea acesteia și o putem face nemodificabilă:
+Folosind `Object.defineProperty` prin specificarea unei proprietăți care nu există în obiectul nostru, putem să adăugăm o proprietate complet nouă obiectului respectiv, să îi setăm valoarea și o putem face nemodificabilă (non-writable):
 
 ```js live
 let object = {
@@ -152,14 +152,14 @@ object.anotherProperty = 1000;
 console.log('New value:', object.anotherProperty);
 ```
 
-Ieșire preconizată:
+Rezultatul așteptat:
 
 ```js
 Original value: 2
 New value: 2
 ```
 
-Dacă modificați codul de mai sus și setați writable la **true**, așa cum este în mod implicit, atunci veți putea atribui valoarea **1000** către **anotherProperty**. 
+Dacă modificați codul de mai sus și setați writable la **true**, așa cum este în mod implicit, atunci veți putea atribui valoarea **1000** pentru **anotherProperty**. 
 
 Rezultatul ar fi:
 
@@ -168,16 +168,16 @@ Original value: 2
 New value: 1000
 ```
 
-Dacă proprietatea **non-writable** este un obiect, atunci referința obiectului nu va putea fi modificată, dar obiectul în sine poate fi modificat atribuindu-i o nouă valoare.
+Dacă proprietatea **non-writable** conține un obiect, atunci referința obiectului nu va putea fi modificată, dar obiectul în sine poate fi modificat prin atribuirea unei noi valori.
 [/slide]
 
 [slide hideTitle]
 
-# Non-Configurable Properties
+# Proprietăți Non-Configurable
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-31-object-non-configurable-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Dacă setați **configurable:false**, pentru orice proprietate veți putea modifica doar proprietatea **writable** care este true la false și nimic altceva.
+Dacă setați **configurable:false** pentru orice proprietate, veți putea modifica doar proprietatea **writable**, care este true, la false și nimic altceva.
 
 Orice încercare de modificare a oricărei alte proprietăți interne **va eșua** și va genera un **TypeError**.
 
@@ -189,22 +189,22 @@ Object.defineProperty(ob, 'a', {
 });
 Object.defineProperty(ob, 'a', {
     enumerable: true
-}); // throws a TypeError
+}); // generează TypeError
 Object.defineProperty(ob, 'a', {
     value: 12
-}); // throws a TypeError
+}); // generează TypeError
 Object.defineProperty(ob, 'a', {
     writable: false
-}); // This is allowed!!
+}); // acest lucru este permis
 Object.defineProperty(ob, 'a', {
     writable: true
-}); // throws a TypeError
+}); // generează TypeError
 ```
 [/slide]
 
 [slide hideTitle]
 
-# Object Freeze and Seal
+# Object Freeze și Seal
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-32-object-freeze-and-seal-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -230,9 +230,9 @@ frozenObj.property1 = 'trying to change it';
 // TypeError
 ```
 
-Toate proprietățile sunt schimbate în **non-writable**, deci nu puteți atribui o nouă valoare **property1** în felul acesta și veți primi o **TypeError** dacă încercați.
+Toate proprietățile sunt schimbate în **non-writable**, deci nu puteți atribui o nouă valoare pentru **property1** și veți primi o **TypeError** dacă încercați.
 
-Puteți modifica valoarea **innerProperty** deoarece conține o referință la un obiect. 
+Puteți modifica valoarea lui **innerProperty**, deoarece conține o referință la un obiect. 
 
 Referința nu se modifică, dar i se poate atribui valoarea lui **innerProperty**.
 
@@ -240,7 +240,7 @@ Referința nu se modifică, dar i se poate atribui valoarea lui **innerProperty*
 frozenObj.property3.innerProperty = 'something else';
 ```
 
-Pentru a preveni acest lucru, puteți **freeze (îngheța)** proprietatea obiectului:
+Pentru a preveni acest lucru, puteți folosi **freeze** pentru proprietatea obiectului:
 
 ```js
 Object.freeze(frozenObj.property3);
@@ -251,11 +251,11 @@ frozenObj.prop3.innerProperty = 'this will not work';
 
 Puteți utiliza `Object.isFrozen(someObject)`. 
 
-Dacă **someObject** este înghețat, acesta va reveni **true**.
+Dacă **someObject** este frozen, va returna **true**.
 
 ## Object Seal
 
-`Object.seal()`- nu permite adăugarea de proprietăți noi obiectului și toate proprietățile acestuia devin **non-configurable (neconfigurabile)**. 
+`Object.seal()`- nu permite adăugarea de proprietăți noi obiectului și toate proprietățile acestuia devin **non-configurable**. 
 
 Valorile proprietăților pot fi modificate.
 
@@ -267,31 +267,31 @@ const obj = {
 
 Object.seal(obj);
 obj.property1 = 'something else' // OK
-delete obj.property1 // Does nothing. Also: Error in strict mode;
+delete obj.property1 // Nu face nimic. În plus: Eroare în modul strict;
 console.log(obj);
 ```
 
-`delete obj.property1` trebuia să elimine această proprietate din obiect, dar din moment ce este **sealed (sigilată)** nu va funcționa.
+`delete obj.property1` trebuia să elimine această proprietate din obiect, dar din moment ce este **sealed** nu va funcționa.
 
 Puteți verifica dacă un obiect este sealed cu `Object.isFrozen(someObject)`.
 
 ## Concluzie
 
-Atât **freeze** cât și **seal** se ocupă de imuabilitatea obiectului.
+Atât **freeze**, cât și **seal** se ocupă de imuabilitatea obiectului.
 
-Când utilizați `Object.freeze()` noile valori nu pot fi atribuite proprietăților.
+Când folosiți `Object.freeze()`, noile valori nu pot fi atribuite proprietăților.
 
 `Object.seal()` face astfel încât noile proprietăți să nu poată fi adăugate și proprietățile existente să nu poată fi eliminate, dar le puteți atribui noi valori.
 
-În orice caz, dacă aveți o proprietate care este de asemenea un obiect, numai referința sa nu poate fi modificată, dar valoarea poate fi, chiar dacă este **non-writable**. 
+În orice caz, dacă aveți o proprietate care conține un obiect, numai referința sa nu poate fi modificată, dar valoarea poate fi, chiar dacă este **non-writable**. 
 
-Pentru a preveni acest lucru, putem, de asemenea să **freeze (înghețăm)** proprietatea obiectului și atunci valoarea din interiorul acestuia nu va putea fi scrisă.
+Pentru a preveni acest lucru, putem, de asemenea să folosim **freeze** pentru proprietatea obiectului, iar atunci valoarea din interiorul acestuia nu va fi **writable**.
 
 [/slide]
 
 [slide hideTitle]
 
-# Problem with Solution: Person
+# Problemă cu Soluție: Person
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-34-solution-person-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -304,28 +304,26 @@ class Person{
 ```
 [/code-editor]
 [task-description]
-# Description
-Scrieți o clasă care ia **first (prenume)** și **last (nume de familie)** ca **parameterii** și returnează un obiect cu **firstName**, **lastName** și **fullName**: "\{**firstName**\} \{**lastName**\}". 
+# Descriere
+Scrieți o clasă care accepte **prenumele** și **numele** ca **parameteri** și returnează un obiect cu **firstName**, **lastName** și **fullName**: "\{**firstName**\} \{**lastName**\}". 
 
-Toate proprietățile trebuie să fie **accesibile**. 
+Toate proprietățile trebuie să fie **accesibile**. Am descoperit că "accesibil" înseamnă și "modificabil". 
 
-Am descoperit că "accesibil" înseamnă și "modificabil". 
-
-Aceasta înseamnă că:
+Acest lucru înseamnă că:
 
 - Dacă **firstName** sau **lastName** s-au schimbat, atunci **fullName** ar trebui de asemenea modificat
 
 - Dacă **fullName** este modificat, atunci **firstName** și **lastName** ar trebui de asemenea schimbate
 
-- Dacă **fullName** este **invalid**, nu ar trebui să modificați celelalte proprietăți
+- Dacă **fullName** este **nevalid**, nu trebuie să modificați celelalte proprietăți
 
-Un **full name** **valid** este în format: "\{**firstName**\} \{**lastName**\}".
+Un **nume complet** **valid** respectă formatul: "\{**firstName**\} \{**lastName**\}".
 
 Notă: Consultați exemplele de mai jos pentru mai multe informații.
 
-## Examples
+## Exemple
 
-**Sample Input**
+**Model de Intrare**
 
 ```js
 let person = new Person('Peter', 'Smith');
