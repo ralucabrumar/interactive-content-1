@@ -18,7 +18,7 @@
 **3. "this" în funcții**
 - Comportamentul cuvântului cheie `this` în funcțiile imbricate și funcțiile săgeată
 
-**4. Legare explicită**
+**4. Legare explicită (explicit binding)**
 - Definiția **legării**, folosind `call()`, `bind()` și `apply()` pentru a schimba contextul funcțiilor
 
 **5. Proprietăți interne ale obiectelor**
