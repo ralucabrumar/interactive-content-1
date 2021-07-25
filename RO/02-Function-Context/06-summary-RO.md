@@ -6,19 +6,19 @@
 
 ## În această lecție ați învățat:
 
-**Context funcțional** - obiectul din care a provenit codul este contextul său implicit. 
+- **Context funcțional** - obiectul din care a provenit codul este contextul său implicit
 
-**Acesta** înseamna că depinde de **unde** și **cum** **este apelată** **funcția** care se execută.
+- Ținta lui **this** depinde de **locația** și **modul** în care **este apelată** **funcția** executată
 
-Funcțiile **bind (leagă)**, **apply (aplică)** și **call (apelează)** pot fi folosite pentru a seta în mod explicit valoarea **acesteia**.
+- Funcțiile **bind**, **apply** și **call** pot fi folosite pentru a seta în mod explicit valoarea lui **this**
 
- - `call()` - schimbă contextul funcției la obiectul dat
+- `call()` - schimbă contextul funcției la obiectul dat
 
 ```js
 functionName.call(objectToBind, additionalArguments);
 ```
 
-- `apply()`- aceeași funcție ca și **call()** dar acceptă o listă de argumente, în timp ce **apply()** acceptă o matrice
+- `apply()`- similară lui **call()**, dar aceasta acceptă o listă de argumente, în timp ce **apply()** acceptă o matrice
 
 ```js
 console.log(praise.apply(dog,
@@ -28,13 +28,15 @@ console.log(praise.apply(dog,
 
 - `bind()` - creează o **funcție nouă** 
 
-Permite obiectelor să împrumute metode de la alte obiecte fără ca noi să facem manual copii ale acelei metode.
+    - permite obiectelor să împrumute metode de la alte obiecte fără ca noi să facem manual copii ale acelei metode
 
-Proprietățile **interne** ale obiectelor care vă permit să modificați modul în care se vor comporta proprietățile obiectului:
+- Proprietățile **interne** ale obiectelor care vă permit să modificați modul în care se vor comporta proprietățile obiectului:
 
-- **enumerable (enumerabil)**, **configurable (configurabil)** și **writable (modificabil)**
+   - **enumerable** 
+   - **configurable**
+   -  **writable**
 
-- **seal (sigilare)** și **freeze (înghețare)** care tratează **nealterabilitatea** obiectului
+- **Seal** și **freeze** tratează **imuabilitatea** obiectului
 
 
 ## În lecția următoare veți învăța:
@@ -45,7 +47,7 @@ Proprietățile **interne** ale obiectelor care vă permit să modificați modul
 
 - Expresii de funcții invocate imediat
 
-- Încheiere
+- Closure
 
 - Tratarea erorilor
 
