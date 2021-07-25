@@ -1,4 +1,4 @@
-# Explicit Function Binding
+# Legarea Explicită a Funcțiilor
 
 [slide hideTitle]
 
@@ -6,17 +6,17 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-16-17-explicit-binding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Legarea ne permite să modificăm contextul unei funcții, schimbând în esență ceea la ce ne indică cuvântului cheie `this`.
+Legarea ne permite să modificăm contextul unei funcții, schimbând ținta indicată de cuvântului cheie `this`.
 
 **Explicit binding** este ceea ce se întâmplă atunci când folosim `call()`, `apply()` sau `bind()` pe o funcție. 
 
 Acest lucru ne permite să legăm o funcție de un anumit obiect și să o folosim ca și cum ar fi o metodă a acelui obiect.
 
-Aceasta schimbă în esență contextul `this`. 
+Acest lucru schimbă în esență contextul lui `this`. 
 
 Cu alte cuvinte, legăm funcția de un context la alegerea noastră.
 
-Să ne uităm la un exemplu folosind `call()`:
+Să ne uităm la un exemplu în care este folosită funcșia `call()`:
 
 ```js live
 function speak(message) {
@@ -29,27 +29,27 @@ let person = {
 
 speak.call(person, 'This is my story...');
 ```
-În mod normal `this` ar indica la **global object** sau **window** și ar fi returnat `undefined` pentru `this.name`.
+În mod normal `this` indică **obiectul global** sau **fereastra** și ar fi trebuit să returneze `undefined` pentru `this.name`.
 
-Am legat în mod explicit obiectul **person** de funcția `speak()` folosind `call()`.
+Am legat în mod explicit obiectul **person** de funcția `speak()`, folosind `call()`.
 
-Este o funcție externă, dar totuși se comportă ca și cum `speak()` este o metodă care aparține obiectului person.
+Aceasta este o funcție externă, dar totuși se comportă ca și cum `speak()` este o metodă care aparține obiectului person.
 
 [/slide]
 
 [slide hideTitle]
 
-# Changing the Context: Call()
+# Schimbarea Contextului: Call()
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-18-19-changing-the-context-call-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`call()` apelează o funcție cu o valoare dată de `this` și argumente opționale. Schimbă contextul funcției la obiectul dat
+`call()` apelează o funcție cu o valoare dată de `this` și argumente opționale. Ea schimbă contextul funcției la obiectul dat.
 
 ```js
 functionName.call(objectToBind, additionalArguments);
 ```
 
-Puteți avea 0, 1 sau mai multe argumente și atunci când apelați obiectul le puteți adăuga astfel `function.call(object, argument1, argument2, argumentN)`;
+Puteți avea 0, 1 sau mai multe argumente și atunci când apelați obiectul le puteți adăuga astfel: `function.call(object, argument1, argument2, argumentN)`;
 
 Metoda `call()` nu face o copie a funcției, ci o execută imediat.
 
@@ -80,21 +80,21 @@ console.log(praise.call(cat,
     'A good companion', 'A goofball'));
 ```
 
-În exemplul de mai sus, puteți vedea că am folosit aceeași funcție care nu aparținea niciunui obiect și am legat acele obiecte de acesta.
+În exemplul de mai sus, puteți vedea că am folosit aceeași funcție care nu aparținea niciunui obiect și am legat acele obiecte de ea.
 
-De fiecare dată când am folosit `call()` contextul a `this` a fot diferit.
+De fiecare dată când am folosit `call()` contextul lui `this` a fot diferit.
 
 [/slide]
 
 [slide hideTitle]
 
-# Changing the Context: Apply()
+# Schimbarea contextului: Apply()
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-20-changing-the-context-apply-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`apply()` și `call()` au același scop. Cu toate aceste, `call()` ia o listă de argumente, în timp ce, `apply()` ia un matrice.
+`apply()` și `call()` au același scop. Cu toate aceste, `call()` acceptă o listă de argumente, în timp ce `apply()` acceptă matrice.
 
-Pentru a ilustra acest lucru cu exemplul anterior:
+Pentru a ilustra acest lucru folosind exemplul anterior:
 
 Folosind `call()`:
 
@@ -112,7 +112,7 @@ console.log(praise.apply(dog,
 ));
 ```
 
-Dacă aveți o serie de argumente, puteți utiliza în continuare `call()` folosind operatorul spread:
+Dacă aveți o matrice de argumente, puteți utiliza în continuare `call()` folosind operatorul spread:
 
 ```js
 functionName.call(thisContext, ...[yourArray]);
@@ -123,7 +123,7 @@ functionName.call(thisContext, ...[yourArray]);
 
 [slide hideTitle]
 
-# Example of Apply()
+# Exemplu pentru Apply()
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-21-apply-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -148,17 +148,17 @@ firstPerson.shareInfo.apply(secondPerson);
 
 [slide hideTitle]
 
-# Changing the Context: Bind()
+# Schimbarea Contextului: Bind()
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-22-changing-the-context-bind-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`bind()` creează o **funcție nouă** și are setat `this` la orice valoare furnizata.
+`bind()` creează o **funcție nouă** și are setat `this` la orice valoare furnizată de noi.
 
-Funcția nu este executată direct când se utilizează `bind()`. 
+Funcția nu este executată direct, atunci când utilizăm `bind()`. 
 
-În esență, permite obiectelor să împrumute metode de la alte obiecte fără ca noi să facem manual copii ale acelei metode.
+În esență, această funcție permite obiectelor să împrumute metode de la alte obiecte fără ca noi să facem manual copii ale acelei metode.
 
-Să ne imaginăm că avem un **student** care poate `study()`:
+Să ne imaginăm că avem un **student** cu metoda `study()`:
 
 ```js
 let student = {
@@ -171,7 +171,7 @@ let student = {
 };
 ```
 
-Avem și un profesor care poate `teach()`:
+Avem și un profesor cu metoda `teach()`:
 
 ```js
 let professor = {
@@ -183,7 +183,7 @@ let professor = {
 };
 ```
 
-Acum imaginați-vă că studentul a avansat atât de mult încât acum este capabil să `teach()`. 
+Acum imaginați-vă că studentul a avansat atât de mult încât acum a dobândit metoda `teach()`. 
 
 Folosiți `bind()` pentru a împrumuta metoda de la obiectul **professor**.
 
@@ -193,9 +193,9 @@ teach();
 // Motivated student teaches Web Development for 2 hours a day
 ```
 
-Folosind `bind(student, 2)` am trecut obiectul **student** ca primul argument, schimbând contextul `this` din **professor** la **student** și am trecut **2** ca al doilea argument.
+Folosind `bind(student, 2)` am trecut obiectul **student** ca prim argument, schimbând contextul lui `this` de la **professor** la **student** și am trecut **2** ca al doilea argument.
 
-Vedeți-o în acțiune:
+Urmăriți acest exemplu:
 
 ```js live
 let student = {
@@ -219,13 +219,13 @@ let teach = professor.teach.bind(student, 2);
 teach();
 ```
 
-Acest lucru este cunoscut ca și funcție de împrumut/borrowing în JavaScript. 
+Acest lucru este cunoscut drept împrumutare de funcții în JavaScript. 
 
 [/slide]
 
 [slide hideTitle]
 
-# Example of Bind()
+# Exemplu pentru Bind()
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-23-bind-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -248,7 +248,7 @@ console.log(boundGetX()); // 42
 
 [slide hideTitle]
 
-# Problem with Solution: Area and Volume Calculator
+# Problemă cu Soluție: Area and Volume Calculator
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/RO/js-advanced-function-context-26-solution-area-and-volume-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -256,17 +256,16 @@ console.log(boundGetX()); // 42
 
 ```
 function calculator(area, vol, input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
-# Description
+# Descriere
 
-Scrieți o funcție care **calculează** **area** și **volumul** unei figuri, care este **definită** prin **coordonatele sale** 
-(**x**, **y**, **z**). 
+Scrieți o funcție care **calculează** **aria** și **volumul** unei figuri **definite** prin **coordonatele sale** (**x**, **y**, **z**). 
 
-Funcțiile **zona** și **vol** sunt **transmise ca parametri** funcției dvs:
+Funcțiile **area** și **vol** sunt **transmise ca parametri** pentru funcția voastră:
 
 ```js
 function area() {
@@ -280,14 +279,14 @@ function vol() {
 };
 ```
 
-## Input
-Veți primi 3 parametri - zona, funcțiile și vol ca și un șir, care conține coordonatele fugurei.
+## Intrare
+Veți primi 3 parametri - funcțiile **area** și **vol** și **un șir care conține coordonatele figurii**.
 
-**Pentru mai multe informații verificați exemplele**
+**Pentru mai multe informații verificați exemplele.**
 
 
-## Output
-Rezultatul trebuie să fie **returnat** ca o **matrice de obiecte**. Fiecare obiect are **două proprietăți**: **zona** și **volumul** al figurii.
+## Ieșire
+Rezultatul trebuie să fie **returnat** sub forma unei **matrice de obiecte**. Fiecare obiect are **două proprietăți**: **aria** și **volumul** figurii.
 
 ```js
 [
@@ -298,11 +297,12 @@ Rezultatul trebuie să fie **returnat** ca o **matrice de obiecte**. Fiecare obi
 
 ```
 
-**Notă: trimiteți numai funcția de rezolvare**.
+**Notă: trimiteți numai funcția**.
 
-# Examples
+# Exemple
+## Exemplul 1
 
-## Input
+## Intrare 
 
 ```js
 area, vol, '[ 
@@ -312,7 +312,7 @@ area, vol, '[
 ]'
 ```
 
-## Output
+## Ieșire
 
 ```js
 [
@@ -322,8 +322,8 @@ area, vol, '[
 ]
 ```
 
-
-## Input
+## Exemplul 2
+## Intrare
 
 ```js
 area, vol, '[ 
@@ -335,7 +335,7 @@ area, vol, '[
 ]' 
 ```
 
-## Output
+## Ieșire
 
 ```js
 [
